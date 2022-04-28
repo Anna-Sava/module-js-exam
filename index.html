@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" id="top">
+        <div class="header__logo">
+          <h1>Meliora</h1>
+        </div>
+        <div class="navigation">
+          <ul class="navigation__wrapper link-hover-center">
+            <li class="navigation__li"><a href="#home">Home</a></li>
+            <li class="navigation__li"><a href="#blog">Blog</a></li>
+            <li class="navigation__li"><a href="#contuct">Contuct us</a></li>
+            <li class="navigation__li"><a href="#more">More</a></li>
+          </ul>
+        </div>
+        <div>
+          <form action="" method="get" class="search">
+            <input name="search" placeholder="Search" type="search" />
+            <button type="submit" class="btnsearch"></button>
+          </form>
+        </div>
+      </header>
+
+      <article>
+        <p class="small">User interface</p>
+        <h1>Bad Design vs. Good Design: 5 Examples We can Learn From</h1>
+        <div class="registration-data">
+          <div class="date"><p class="small">October 24.2020</p></div>
+          <div class="user-name"><p class="small">Shane Hobbins</p></div>
+        </div>
+        <div class="image-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/slider/01.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slider/02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slider/03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slider/04.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
+          sagittis sem ac porta. Sed commodo ligula vitae mollis tristique.
+          Maecenas egestas semper mauris. Duis tempus blandit ultrices. Proin
+          elit nulla, viverra id suscipit quis, tristique a dolor. Sed dapibus,
+          orci ac luctus tincidunt, massa erat porttitor odio, non imperdiet dui
+          risus et elit.
+        </p>
+        <br />
+        <h2>Information overload</h2>
+        <br />
+        <p>
+          Vivamus dictum ultrices tortor. Ut imperdiet, enim in suscipit
+          dignissim, mauris massa pellentesque augue, quis ultricies sem tortor
+          et velit.
+        </p>
+        <div class="nested-text">
+          <p>
+            Sed commodo ligula vitae mollis tristique. Maecenas egestas semper
+            mauris. Duis tempus blandit ultrices. Proin elit nulla, viverra id
+            suscipit quis, tristique a dolor.
+          </p>
+          <br />
+          <p>‘Designing For Sustainability, Tim Frick, 2014'</p>
+        </div>
+        <br />
+        <h2 class="split-right">Lessons Learnt: Best Practice</h2>
+        <br />
+        <ul class="lesson">
+          <li class="lesson__li">
+            Morbi congue odio vel luctus aliquam. Morbi accumsan sapien at lorem
+            ultricies aliquam eu eu nisl. Suspendisse.
+          </li>
+          <li class="lesson__li">
+            Maecenas sit amet ligula auctor neque aliquam placerat et ac neque.
+            Proin risus eros, fringilla eu suscipit dignissim, dignissim.
+          </li>
+        </ul>
+        <div class="article__footer">
+          <div class="design">
+            <div class="plate plate--hci">
+              <p class="small">#HCI</p>
+            </div>
+            <div class="plate plate--designThinking">
+              <p class="small">#Design Thinking</p>
+            </div>
+          </div>
+          <div class="sosialNetwork">
+            <div><p class="small">Share</p></div>
+            <a
+              href="https://www.facebook.com/"
+              class="icon facebook"
+              target="blank"
+            >
+              <svg class="icon">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="https://github.com" class="github" target="blank">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#github"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/?lang=uk"
+              class="twitter"
+              target="blank"
+            >
+              <svg class="icon">
+                <use xlink:href="sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/" class="linkedIn" target="blank">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <section>
+        <div class="form">
+          <h2>Add a comment</h2>
+          <form action="#" method="post">
+            <div class="comment row">
+              <div class="form-group">
+                <label for="comment_name">Name:&#65121;</label>
+                <input
+                  type="name"
+                  required
+                  class="form-control"
+                  id="comment-name"
+                />
+                <!--<div class="invalid">Again!</div>-->
+              </div>
+              <div class="form-group">
+                <label for="comment_email" class="email">
+                  Email:&#65121;
+                </label>
+                <input
+                  type="email"
+                  required
+                  class="form-control"
+                  id="comment-email"
+                />
+                <!--<div class="valid-feedback">Looks good!</div>-->
+              </div>
+              <div class="form-group">
+                <label for="comment_website" class="name"> Website </label>
+                <input type="name" class="" id="comment-website" />
+              </div>
+            </div>
+            <textarea
+              name="comment-body"
+              id="comment-body"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <div class="row">
+              <div class="form-group text-invalid">
+                <button
+                  type="reset"
+                  id="comment-cansel"
+                  class="btn btn--cansel"
+                >
+                  Cancel
+                </button>
+              </div>
+              <div class="form-group text-right">
+                <button type="submit" id="comment-add" class="btn btn--primary">
+                  Post
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="comment_field"></div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__text">
+            <p class="small">Copyright © 2020 Meliora, Inc.</p>
+          </div>
+          <div class="sosialNetwork sosialNetwork--footer">
+            <a
+              href="https://www.facebook.com/"
+              class="icon facebook"
+              target="blank"
+            >
+              <svg class="icon">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="https://github.com" class="github" target="blank">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#github"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/?lang=uk"
+              class="twitter"
+              target="blank"
+            >
+              <svg class="icon">
+                <use xlink:href="sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/" class="linkedIn" target="blank">
+              <svg class="icon">
+                <use xlink:href="sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <a href="#top">
+          <div class="scroll-up go_to_top">
+            <svg class="icon icon--scroll-up">
+              <use xlink:href="sprite.svg#scrollup"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
